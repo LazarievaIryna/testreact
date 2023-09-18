@@ -1,13 +1,28 @@
+import  {  useState } from 'react';
 import css from './Card.module.css';
-import { Button } from 'components/Button/Button';
+import { Modal } from 'components/Modal/Modal';
+
 export const Card = ({ car}) =>{
 
+    const [isModalOpen, setModalOpen]=useState(false)
     const adress = car.address.split(', ');
     const countrieCar = adress[adress.length - 1];
     const cityCar = adress[adress.length - 2];
-    const func = car.functionalities[0];
-    console.log(func)
-
+    // const func = car.functionalities[0];
+    // console.log(func)
+    
+    const openModal=(evt)=>{
+        setModalOpen(true);
+       
+       }
+    
+      const closeModal = (evt) => {
+       
+        setModalOpen(false);
+        
+        
+      };
+      
     return(<>
        <li className={css.card}>
         <img src={car.img} alt="car" className={css.img}/>
@@ -28,8 +43,10 @@ export const Card = ({ car}) =>{
                 </ul>
             </div>
         </div>
-        <Button/>
+        <button type='button' onClick={openModal} className={css.button}>Learn more</button>
+    
        </li>
+       {isModalOpen && <Modal car={car} onClose={closeModal}/>}
        </>
 
     )

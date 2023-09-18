@@ -1,12 +1,13 @@
 .card{
     width: 274px;
-    height: 426px;
+    /* height: 426px; */
 }
 .img{
     width: 274px;
     height: 268px;
     object-fit: cover;
     margin-bottom: 14px;
+    border-radius: 14px;
 }
 .titleCard{
     margin-bottom: 8px;
@@ -39,5 +40,16 @@
 }
 .wrapperDescription{
     margin-bottom: 28px;
+    
+}
+.button{
+    height: 44px;
+    width: 274px;
+    background-color: rgba(52, 112, 255, 1);
+    border: none;
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 500;
     
 }
