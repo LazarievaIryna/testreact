@@ -1,0 +1,24 @@
+.header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(148 176 244);
+    gap: 20px;
+    box-shadow:  0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+
+}
+.navBtn{
+/* height: 44px; */
+color:  rgba(255, 255, 255, 1);
+text-decoration: none;
+ background-color: rgba(52, 112, 255, 1);
+ border-radius: 12px;
+ padding: 5px 10px 5px 10px;
+ font-size: 21px;
+
+
+}

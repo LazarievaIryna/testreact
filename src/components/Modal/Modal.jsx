@@ -1,5 +1,4 @@
 import { createPortal } from 'react-dom';
-import { nanoid } from 'nanoid'
 import { useEffect } from 'react';
 import css from './Modal.module.css'
 import cross from '../../img/x (2).svg'
