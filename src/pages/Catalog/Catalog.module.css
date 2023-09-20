@@ -5,14 +5,7 @@
     margin-top: 40px;
 }
 
-.list{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px 26px;
-    padding: 0;
-    
-}
+
 .btnLoadMore{
     display: block;
     margin-top: 100px;

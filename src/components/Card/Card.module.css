@@ -62,4 +62,15 @@
     stroke: rgba(255, 255, 255, 0.8);
     right: 14px;
     top: 14px;
+    border: none;
+    background-color: transparent;
+}
+.iconFavoriteTrue{
+    position: absolute;
+    fill: #3470FF;
+    stroke: #3470FF;
+    border: none;
+    background-color: transparent;
+    right: 14px;
+    top: 14px;
 }
